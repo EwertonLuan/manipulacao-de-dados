@@ -1,14 +1,11 @@
 {
-  "name": "backend_api_users",
+  "name": "manipulacao_de_dados",
   "version": "1.0.0",
-  "description": "API Backend with mongodb",
+  "description": "Manipulando dados com nodejs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node server.js",
-    "build": "babel src --out-dir dist",
-    "start": "nodemon dist/app.js",
+    "start": "nodemon --exec babel-node server.js",
     "test:integration": "NODE_ENV=test mocha --opts test/integration/mocha.opts test/integration/**/*.test.js",
-    "test:unit": "NODE_ENV=test mocha --opts test/unit/mocha.opts test/unit/**/*.test.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -19,13 +16,9 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "joigoose": "^4.0.2",
-    "mongoose": "^5.2.17"
+    "express": "^4.16.4"
   },
   "devDependencies": {
-    "@types/joi": "^13.6.0",
-    "@types/joigoose": "^2.0.1",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-transform-runtime": "^6.23.0",

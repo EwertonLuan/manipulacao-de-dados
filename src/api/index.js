@@ -1,17 +1,14 @@
 import axios from 'axios'; 
 import config from '../config';
 
-class DitoEvents {
+class DitoApi {
 
 	async get(req, res){
 		try{
-			const timeline = await axios.get(config.API_DITO);
-			// res.status(200).json(timeline.data)
-		
+			const timeline = await axios.get(config.API_DITO);		
 			return timeline.data;
 			
 		} catch (err) {
-			// res.status(500).json(err)
 			return err;
 		}
 		
@@ -19,4 +16,4 @@ class DitoEvents {
 
 }
 
-export default DitoEvents;
+export default DitoApi;

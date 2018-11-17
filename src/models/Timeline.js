@@ -1,10 +1,5 @@
-import mongoose from 'mongoose';
+
 import joi from 'joi';
-
-
-const joigoose_mon = require('joigoose')(mongoose);
-
-//creat the object with joi for validate
 
 const TimelineJoi = joi.object({	
 	timestamp: joi.date().timestamp(), //"2016-10-02T11:37:31.2300892-03:00",
@@ -19,8 +14,4 @@ const TimelineJoi = joi.object({
 	]
 });
 
-//Convert the EventJoi for a mongoose schema
-const timeline_convert = new mongoose.Schema(joigoose_mon.convert(TimelineJoi));
-const Timeline = mongoose.model('Timeline', timeline_convert);
-
-export default Timeline;
+export default TimelineJoi;

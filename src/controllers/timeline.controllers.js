@@ -87,10 +87,10 @@ class TimelineItems {
 			await insertProdutos();
 
 			/** Organiza o resultado em ordem decresente*/
-			const response = data_res.timeline.sort(function (a, b) {	
+			const result = data_res.timeline.sort(function (a, b) {	
 				return (a.timestamp > b.timestamp) ? -1 : ((b.timestamp > a.timestamp) ? 1 : 0);
 			});
-			res.status(200).json({timeline: response});            
+			res.status(200).json({timeline: result});            
 		} catch (error) {
 			res.status(500).json({err: error.message});
 		}
