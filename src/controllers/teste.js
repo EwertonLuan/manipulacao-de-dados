@@ -86,9 +86,9 @@ export default async (req, res) =>{
 	try {
 		await createTimeline();
 		await insertProduts();
-        const result = await Timeline.find({}, {_id: 0, __v:0}).sort({timestamp: -1});
-        await Timeline.remove({})
-        res.status(200).json(result);
+		const result = await Timeline.find({}, {_id: 0, __v:0}).sort({timestamp: -1});
+		await Timeline.remove({});
+		res.status(200).json(result);
         
         
 	} catch (error) {
