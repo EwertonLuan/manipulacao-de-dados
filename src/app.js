@@ -10,4 +10,4 @@ app.use(bodyParser.json());
 app.use(cors());
 routes(app);
 
-export default app
+export default app;
