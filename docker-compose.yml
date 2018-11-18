@@ -1,0 +1,11 @@
+
+version: "3"
+
+services: 
+  dito_dadps:
+    image: node_api_dados
+    container_name: api_dados
+    ports:
+      - "5000:5000"
+
+    command: npm start
