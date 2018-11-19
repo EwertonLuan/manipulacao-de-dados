@@ -59,7 +59,7 @@ Para iniciar o server:
 
 ### Rotas da API
 
-Inicio das rotas: **http://localhost:5000**
+Exemplo de inicio das rotas: **http://localhost:5000**
 
 **GET /api/v1/timeline**
 
