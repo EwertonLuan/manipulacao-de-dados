@@ -44,7 +44,7 @@ Configure os arquivos docker-compose com a mesma porta do server, dentro dos arq
 
 Primeiro construa a imagem:
 ```
- $ docker build -t node_api .
+ $ docker build -t node_api_dados .
  ```
 
 Para iniciar o server:
